@@ -1,0 +1,13 @@
+${head}
+
+<h1>BlogAnon</h1>
+<h3>Post List</h3>
+<ul>
+    ${posts.map((p) => {
+    return`
+    <li><a href="/blogs/${p.id}">${p.title}</a></li>
+    `
+    }).join('') }
+</ul>
+
+${foot}
